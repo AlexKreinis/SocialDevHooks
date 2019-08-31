@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://alex123:alex123@socialdev-nibex.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "89f85b1c8b1e3bd4e238",
+  "githubSecret": "de33f364ccd2709d28f98de6fcc2ed217fa1d04d"
+}
