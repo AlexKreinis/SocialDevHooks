@@ -55,11 +55,9 @@ router.get('/', auth, async (req, res) => {
 router.get('/:id', auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-
     if (!post) {
       return res.status(404).json({ msg: 'Post not found' });
     }
-
     res.json(post);
   } catch (err) {
     console.error(err.message);
@@ -72,6 +70,7 @@ router.get('/:id', auth, async (req, res) => {
 
 router.delete('/:id', auth, async (req, res) => {
   try {
+    console.log('entered');
     const post = await Post.findById(req.params.id);
 
     if (!post) {
